@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ftdi.h>
+#include "portability/ftdi.hpp"
 #include <string.h>
 
 #include "board.hpp"

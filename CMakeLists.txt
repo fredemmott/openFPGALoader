@@ -342,6 +342,7 @@ set(OPENFPGALOADER_HEADERS
 	src/display.hpp
 	src/part.hpp
 	src/progressBar.hpp
+	src/portability/ftdi.hpp
 	src/portability/unistd.hpp
 )
 

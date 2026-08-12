@@ -5,6 +5,7 @@
       "name": "pkgconf",
       "host": true
     },
+    "libftdi1",
     "libusb",
     "zlib"
   ]
