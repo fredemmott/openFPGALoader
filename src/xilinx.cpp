@@ -633,7 +633,7 @@ void Xilinx::program(unsigned int offset, bool unprotect_flash)
 			open_bitfile(_secondary_filename, _secondary_file_extension,
 				&secondary_bit, reverse, _verbose);
 		}
-	} catch (std::exception &e) {
+	} catch (std::exception &) {
 		printError("FAIL");
 		if (bit)
 			delete bit;

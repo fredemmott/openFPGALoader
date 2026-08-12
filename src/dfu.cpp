@@ -66,7 +66,7 @@ DFU::DFU(const string &filename, bool bypass_bitstream,
 		try {
 			_bit = new DFUFileParser(filename, _verbose > 0);
 			printSuccess("DONE");
-		} catch (std::exception &e) {
+		} catch (std::exception &) {
 			printError("FAIL");
 			throw runtime_error("Error: Fail to open file");
 		}
@@ -75,7 +75,7 @@ DFU::DFU(const string &filename, bool bypass_bitstream,
 		try {
 			_bit->parse();
 			printSuccess("DONE");
-		} catch (std::exception &e) {
+		} catch (std::exception &) {
 			printError("FAIL");
 			delete _bit;
 			throw runtime_error("Error: Fail to parse file");

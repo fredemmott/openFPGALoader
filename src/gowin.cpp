@@ -442,7 +442,7 @@ void Gowin::checkCRC()
 			if (ucode == strtol(hdr.c_str(), NULL, 16))
 				goto success;
 		}
-	} catch (std::exception &e) {}
+	} catch (std::exception &) {}
 	char mess[256];
 	snprintf(mess, 256, "Read: 0x%08x checksum: 0x%04x\n", ucode, checksum);
 	printError("CRC check : FAIL");

@@ -4,7 +4,6 @@
  */
 
 #include <string.h>
-#include <unistd.h>
 
 #include <fstream>
 #include <iomanip>
@@ -1135,7 +1134,7 @@ int parse_opt(int argc, char **argv, struct arguments *args,
 					nullptr, 10));
 				args->device_addr = static_cast<uint8_t>(
 					std::stoi(bus_dev_num[1], nullptr, 10));
-			} catch (std::exception &e) {
+			} catch (std::exception &) {
 				printError("Error: busdev-num invalid format: must be numeric values");
 				return -1;
 			}
@@ -1170,7 +1169,7 @@ int parse_opt(int argc, char **argv, struct arguments *args,
 				int pin_num;
 				try {
 					pin_num = std::stoi(pins[i], nullptr, 0);
-				} catch (std::exception &e) {
+				} catch (std::exception &) {
 					if (pins_list.find(pins[i]) == pins_list.end()) {
 						printError("Invalid pin name");
 						return -1;

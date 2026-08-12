@@ -223,7 +223,7 @@ void Efinix::program(unsigned int offset, bool unprotect_flash)
 				delete bit;
 				throw std::runtime_error("passive mode not supported for flash");
 			}
-		} catch (std::runtime_error& e) {
+		} catch (std::runtime_error&) {
 			throw;
 		} catch (...) {
 		}
