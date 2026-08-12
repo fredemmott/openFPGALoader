@@ -7,7 +7,6 @@
 #ifndef SRC_COLOGNECHIP_HPP_
 #define SRC_COLOGNECHIP_HPP_
 
-#include <unistd.h>
 #include <regex>
 #include <string>
 

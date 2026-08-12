@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ftdi.h>
-#include <unistd.h>
 #include <string.h>
 
 #include "board.hpp"
