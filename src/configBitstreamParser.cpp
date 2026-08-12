@@ -7,8 +7,8 @@
 #include <stdexcept>
 #include <string>
 #include <stdint.h>
-#include <strings.h>
-#include <unistd.h>
+
+#include "portability/unistd.hpp"
 
 #ifdef HAS_ZLIB
 #ifdef HAS_ZLIBNG

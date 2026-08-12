@@ -5,11 +5,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <chrono>
 #include <string>
 #include "progressBar.hpp"
 #include "display.hpp"
+#include "portability/unistd.hpp"
 
 ProgressBar::ProgressBar(const std::string &mess, int maxValue,
 		int progressLen, bool quiet): _mess(mess), _maxValue(maxValue),

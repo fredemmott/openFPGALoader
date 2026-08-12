@@ -6,8 +6,7 @@
  */
 
 #include "svf_jtag.hpp"
-
-#include <unistd.h>
+#include "portability/unistd.hpp"
 
 #include <algorithm>
 #include <iostream>

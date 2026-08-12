@@ -6,13 +6,14 @@
 
 #include "bpiFlash.hpp"
 
-#include <unistd.h>
 #include <cstring>
 #include <stdexcept>
 #include <vector>
 
 #include "display.hpp"
 #include "progressBar.hpp"
+
+#include "portability/unistd.hpp"
 
 /* Bit-reverse a byte (MSB <-> LSB).
  * Required for BPI x16: the FPGA's D00 pin is the MSBit of each config byte

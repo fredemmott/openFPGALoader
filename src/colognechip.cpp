@@ -8,6 +8,7 @@
 
 #include <memory>
 #include <string.h>
+#include "portability/unistd.hpp"
 
 #define JTAG_CONFIGURE  0x06
 #define JTAG_SPI_BYPASS 0x05

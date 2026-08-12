@@ -5,7 +5,6 @@
 
 #include <libusb.h>
 #include <stdint.h>
-#include <unistd.h>
 
 #include <stdexcept>
 #include <string>
@@ -14,6 +13,8 @@
 #include "display.hpp"
 #include "fx2_ll.hpp"
 #include "ihexParser.hpp"
+
+#include "portability/unistd.hpp"
 
 using namespace std;
 
