@@ -12,7 +12,7 @@ endif()
 # In Linux terms, this is roughly equivalent to dynamically linking libc but statically linking libc++
 #
 # This gets us roughly the portability of a static build, but with nearly none of the size cost
-set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>>")
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 add_compile_options("/MT$<$<CONFIG:Debug>:d>")
 add_link_options(
   "/DEFAULTLIB:ucrt$<$<CONFIG:Debug>:d>.lib"
